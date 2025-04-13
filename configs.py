@@ -14,10 +14,10 @@ class Config(object):
 	DATABASE_URL = os.environ.get("DATABASE_URL")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002623746464")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
-	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "-1002623746464").split())
+	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "-7305659839").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1002623746464 -1002623746464").split()))
+	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-7305659839 -7305659839").split()))
 	OTHER_USERS_CAN_SAVE_FILE = [int(id) for id in os.environ.get("OTHER_USERS_CAN_SAVE_FILE", "").split(",") if id.strip()]
 	ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
